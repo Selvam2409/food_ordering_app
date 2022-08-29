@@ -124,25 +124,21 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(
                   height: 30,
                 ),
-                SizedBox(
-                  width: double.infinity,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(primary: Colors.yellow),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const HomePage(),
-                            ),
-                          );
-                        },
-                        child: const Text(
-                          'Login',
-                          style: TextStyle(color: Colors.black54, fontSize: 20),
-                        )),
-                  ),
+                Center(
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(primary: Colors.yellow),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HomePage(),
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Login',
+                        style: TextStyle(color: Colors.black54, fontSize: 20),
+                      )),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
